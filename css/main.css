@@ -13,7 +13,7 @@ ul{
     height: 100px;
 }
 
-main{
+main, .content {
     margin: 0 auto ;
     width: 1000px;
     position: relative;
@@ -62,7 +62,7 @@ main{
     border-bottom: 2px solid #0346aa ;
     }
 .menu ul li a {
-    color: #FFBF00;
+    color: #0346aa;
     text-decoration: none;
     font-size: 25px;
     text-transform: uppercase;
@@ -98,28 +98,28 @@ main{
 button.slick-prev{
     font-size: 0px;
     border: none;
-    width: 64px;
-    height: 64px;
+    width: 44px;
+    height: 50px;
     background-color: transparent;
-    background-image: url('../img/seta-esquerda1.png') ;
+    background-image: url('../img/setaesqueda.png') ;
     position: absolute;
     z-index: 9;
     background-position: left;
-    top: 35%;
-    left: 14%;
+    top: 58%;
+    left: 0%;
 }
 button.slick-next{
     font-size: 0px;
     border: none;
-    width: 64px;
-    height: 64px;
+    width: 44px;
+    height: 50px;
     background-color: transparent;
-    background-image: url('../img/seta-direita1.png') ;
+    background-image: url('../img/seta.png') ;
     position: absolute;
     z-index: 9;
     background-position: left;
-    top: 35%;
-    right: 14%;
+    top: 58%;
+    right: 0%;
     }
 .slick-list{
     width: 100%!important;
@@ -154,4 +154,25 @@ li.slick-active button{
 .slick-dots li{
     display: inline-block;
     padding-left: 10px;
+}
+.content h1{
+    color: #0346aa;
+
+}
+.texto-destaque{
+    text-align: center;
+}
+.texto-destaque p {
+    color: black;
+    font-size: 20px;
+}
+.col-3 {
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 29%;
+    float:left;
+    position: relative;
+}
+.bloco-texto{
+    margin-top: 1em;
 }
