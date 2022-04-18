@@ -176,3 +176,9 @@ li.slick-active button{
 .bloco-texto{
     margin-top: 1em;
 }
+
+
+.col-1 {
+    float: left;
+    width: 25%;
+}
