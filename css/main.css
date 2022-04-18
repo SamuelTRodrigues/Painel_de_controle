@@ -28,9 +28,9 @@ main{
 }
 .redes-sociais ul li{
     display: inline-block;
-    float:left;
+    float: left;
     list-style: none;
-    margin-left: 15px;
+    margin-left: 35px;
 }
 .redes-sociais {
     width: 30%;
@@ -53,7 +53,14 @@ main{
     display:inline-block;
     color: #FFBF00;
     margin-left: 15px ;
+    height:50px;
 }
+.menu ul li a:hover{
+    color: #0346aa;
+   }
+.menu ul li:hover{
+    border-bottom: 2px solid #0346aa ;
+    }
 .menu ul li a {
     color: #FFBF00;
     text-decoration: none;
@@ -71,7 +78,7 @@ main{
     float: right;
 }
 .busca input{
-    background-image: url('../img/busca2.png' );
+    background-image: url('../img/busca2.png');
     background-size: 30px;
     background-repeat: no-repeat;
     background-position: 96%;
@@ -86,4 +93,65 @@ main{
 
 .col-100{
     width: 100%;
+}
+
+button.slick-prev{
+    font-size: 0px;
+    border: none;
+    width: 64px;
+    height: 64px;
+    background-color: transparent;
+    background-image: url('../img/seta-esquerda1.png') ;
+    position: absolute;
+    z-index: 9;
+    background-position: left;
+    top: 35%;
+    left: 14%;
+}
+button.slick-next{
+    font-size: 0px;
+    border: none;
+    width: 64px;
+    height: 64px;
+    background-color: transparent;
+    background-image: url('../img/seta-direita1.png') ;
+    position: absolute;
+    z-index: 9;
+    background-position: left;
+    top: 35%;
+    right: 14%;
+    }
+.slick-list{
+    width: 100%!important;
+}
+
+.slick-initialized{
+    overflow: hidden;
+    width:100%;
+}
+.slick-dots li button{
+    font-size: 0px;
+    border: 2px solid white;
+    width: 20px;
+    height: 20px;
+    background: transparent;
+    border-radius: 50%;
+    cursor: pointer;
+
+}
+.slick-dots{
+    margin: 0 auto;
+    width: 50%;
+    position: absolute;
+    left: 43%;
+    top: 80%;
+}
+
+li.slick-active button{
+    background: #0346aa;
+}
+
+.slick-dots li{
+    display: inline-block;
+    padding-left: 10px;
 }
