@@ -1,5 +1,16 @@
+<?php
+
+     if(isset($_POST['submit'])){
+         print_r($_POST['nome']);
+         print_r($_POST['email']);
+         print_r($_POST['telefone']);
+
+     }
+
+
+?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -85,7 +96,7 @@
 </head>
 <body>
     <div class="box">
-        <form action="">
+        <form action="cadastro.php" method="POST">
             <fieldset>
                 <legend><b>Cadastro</b></legend>
                 <br>
