@@ -1,16 +1,49 @@
 <?php
 
-     if(isset($_POST['submit'])){
-         print_r($_POST['nome']);
-         print_r($_POST['email']);
-         print_r($_POST['telefone']);
+if(isset($_POST['submit'])){
 
-     }
+   /*  print_r('Nome: ' .$_POST['nome']);
+    print_r('<br>');
+    print_r('Email: ' . $_POST['email']);
+    print_r('<br>');
+    print_r('telefone: ' . $_POST['telefone']);
+    print_r('<br>');
+    print_r('Genero: ' . $_POST['genero']);
+    print_r('<br>');
+    print_r('Data de Nascimento: ' . $_POST['data_nascimento']);
+    print_r('<br>');
+    print_r('Cidade: ' . $_POST['cidade']);
+    print_r('<br>');
+    print_r('Estado: ' . $_POST['estado']);
+    print_r('<br>');
+    print_r('Endereço: ' . $_POST['endereco']);
+    print_r('<br>');
+    print_r('numero: ' . $_POST['numero']);
+    print_r('<br>');
+    print_r('Complemento: ' . $_POST['complemento']); */
+
+include_once('config.php');
 
 
-?>
+    $nome = $_POST['nome'];
+    $senha = $_POST['senha'];
+    $email = $_POST['email'];
+    $telefone = $_POST['telefone'];
+    $genero = $_POST['genero'];
+    $data_nasc = $_POST['data_nascimento'];
+    $cidade = $_POST['cidade'];
+    $estado = $_POST['estado'];
+    $endereco = $_POST['endereco'];
+    $numero = $_POST['numero'];
+    $complemento = $_POST['complemento'];
+
+    $result = mysqli_query ($conexao, "INSERT INTO usuarios(nome,senha,email,telefone,genero,data_nasc,cidade,estado,endereco,numero,complemento)
+    VALUES('$nome','$senha','$email','$telefone','$genero','$data_nasc','$cidade','$estado','$endereco','$numero','$complemento')");
+    header('Location: login.php');
+}
+?>  
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -103,6 +136,11 @@
                 <div class="inputBox">
                     <input type="text" name="nome" id="nome" class="inputUser" required>
                     <label for="nome" class="labelInput">Nome completo</label>
+                </div>
+                <br><br>
+                <div class="inputBox">
+                    <input type="password" name="senha" id="senha" class="inputUser" required>
+                    <label for="senha" class="labelInput">Senha</label>
                 </div>
                 <br><br>
                 <div class="inputBox">
